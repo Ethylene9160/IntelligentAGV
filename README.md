@@ -15,4 +15,4 @@
 
 * 向Reference文件夹存放文件，选择`commit directly to the main branch`
 
-* 修改代码/项目内容，请使用pull-request拉取仓库。
+* 修改代码/项目内容，请使用pull-request拉取仓库，创建新的分支进行提交。
