@@ -9,9 +9,9 @@
 
 ### pull-request使用
 
-懒得写了，都在这里边了。
+懒得写了，都在这里边了。但是这个有点抽象，下次要用的时候咱们实际操作操作就会了。
 
-[https://blog.csdn.net/CY2333333/article/details/113731490](https://blog.csdn.net/CY2333333/article/details/113731490)
+[github pull-request教学](https://blog.csdn.net/CY2333333/article/details/113731490)
 
 * 向Reference文件夹存放文件，选择`commit directly to the main branch`
 
