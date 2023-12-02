@@ -1,4 +1,0 @@
-{
-    "cortex-debug.armToolchainPath": "D:\\Sustech\\SDIMDependencies\\arm-gnu-toolchain-13.2.Rel1-mingw-w64-i686-arm-none-eabi\\bin",
-    "cortex-debug.openocdPath": "D:\\SUSTECH\\SDIMDEPENDENCIES\\OPENOCD-20231002-0.12.0\\BIN\\OPENOCD.EXE"
-}
