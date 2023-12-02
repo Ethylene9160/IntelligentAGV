@@ -62,6 +62,7 @@ void SystemClock_Config(void);
   */
 int main(void)
 {
+  
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -106,6 +107,7 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  
 
   /** Configure the main internal regulator output voltage
   */
