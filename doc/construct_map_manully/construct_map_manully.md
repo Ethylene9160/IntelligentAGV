@@ -102,7 +102,7 @@ std::vector<int8_t> yourmap = {
 	r.sleep();//sleep.
 ```
 
-详细请参考`mmap_pkg/src/mMap.cpp`.
+详细请参考本仓库`src/mmap_pkg/src/mMap.cpp`.
 
 ## 使用
 
@@ -117,3 +117,12 @@ rosrun mmap_pkg map_pub_node
 ```
 
 然后，启动rviz，电机`add`，加入topic下的map话题，就能看到这个map了。
+
+或者，使用g++命令（如果您配置了g++环境），可以启动终端，尝试采用如下方法：
+
+```bash
+g++ -I "Path to your ros cpp lib path, because we need ros and nav pkgs" mMap.cpp -o my_map_publisher
+./my_map_publisher
+```
+
+来运行这个可执行文件。
