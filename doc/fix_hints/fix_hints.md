@@ -84,7 +84,7 @@ roslaunch wheeltec_robot_rc keyboard_teleop.launch
 pub = rospy.Publisher('~cmd_vel', Twist, queue_size=5)
 ```
 
-其中，`~cmd_vel`表示在，话题名为`cmd_vel`，但是转换为私有话题。
+其中，`~cmd_vel`表示在，话题名为`cmd_vel`，但是转换为私有话题，所以订阅别的包下的时候，别加`~`。
 
 然后，确保串口发布程序中，有相关话题的订阅。例如，例程`turn_on_wheeltec_robot`的文件中（即，确保turn_on_wheeltec在正常运行），有对`cmd_vel`话题的订阅。
 

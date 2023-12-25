@@ -10,7 +10,7 @@
 
 图示：
 
-![image-20231218191317484](readme.assets/image-20231218191317484.png)
+![image-20231218191317484](key_control.assets/image-20231218191317484.png)
 
 在Twist实例变量中，通过对Twist下的平动运动对象下的x、转动控制对象下的z进行控制：
 
@@ -21,6 +21,12 @@ twist.angulat.z = wz # 将绕z轴的转动角速度传递给twist
 pub.publish(twist) # 发布twist。其中，pub是您已经订阅好了的话题。
 ```
 
-详情请参考上一文件夹下的`key_example.py`。
+详情请参考`src/key_example/key_control.py`。使用时，直接采用：
+
+```py
+python key_control.py
+```
+
+即可开启键盘控制。
 
 注意，使用的时候，请先开启`turn_on_wheeltec_robot.launch`（或者仅运行其与串口通讯有关的节点），然后再运行本python文件。
