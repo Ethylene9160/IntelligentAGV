@@ -3,7 +3,30 @@
 
 ## 仓库结构
 
-|-Reference：保存文献的地方
+> doc: 文档参考地址（除了差速大车的代码，其对应的帮助文档在F407VET6_大车差速代码_C50B版本_(2023.04.21)的doc目录。）
+>
+> src：代码放置地址
+>
+> Reference：保存文献的地方
+
+```bash
+D:.
+├─doc
+│  ├─construct_map_manully # 人工建图
+│  ├─fix_hints # Deprecated
+│  ├─key_control # 键盘控制
+│  ├─visual_studio_code_guilder # VSCode接管keil工程
+│  └─visual_studio_code_with_keil # VSCode接管keil工程
+├─References
+└─src
+    ├─12A双通道驱动
+    ├─F407VET6_大车差速代码_C50B版本_(2023.04.21)
+    ├─key_example
+    ├─mmap_pkg
+    └─wheeltec_robot
+```
+
+
 
 ## 使用仓库
 
