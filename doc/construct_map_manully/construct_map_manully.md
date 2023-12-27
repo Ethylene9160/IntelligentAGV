@@ -126,3 +126,17 @@ g++ -I "Path to your ros cpp lib path, because we need ros and nav pkgs" mMap.cp
 ```
 
 来运行这个可执行文件。
+
+
+
+# TF in Map
+
+发布地图时，需要构建Map的frame作为节点。我们需要调用TF包，把最初的odom_combined中心变为map的frame。
+
+在map_server下用来读取map的launch文件加入以下节点：
+
+```bash
+<node pkg="tf" type="static_transform_publisher" name="odom_combined" args="0 0 0 0 0 0 map odom_combined 10"/>
+```
+
+他表示，基于odom_combined的frame，以三个平动自由度、三个转动自由度的0偏移，作为map参考系的节点。
