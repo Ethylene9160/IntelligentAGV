@@ -1,0 +1,14 @@
+<launch>
+    <!-- 设置地图的配置文件 -->
+    <arg name="map" default="mmmmap.yaml" />
+    <!-- 运行地图服务器，并且加载设置的地图-->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find map_server)/map/$(arg map)">
+
+	<!-- 2023.12.25.23:56 -->
+	<param name="global_frame_id" value="map"/>
+    <!--param name="pub_map_odom_transform" value="true"/-->
+    </node>
+	
+    <!-- 2023.12.27.11:24 -->
+    <node pkg="tf" type="static_transform_publisher" name="odom_combined" args="0 0 0 0 0 0 map odom_combined 0"/>
+</launch>
