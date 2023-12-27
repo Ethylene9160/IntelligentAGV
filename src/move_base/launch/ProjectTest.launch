@@ -1,0 +1,13 @@
+<launch>
+
+    <include file="$(find rplidar_ros)/launch/view_rplidar_s1.launch" />
+    <!-- 设置地图的配置文件 -->
+    <!--include file="/home/wj/catkin_ws/src/map_server/launch/read.launch" /-->
+
+    <!-- 启动AMCL节点 -->
+    <include file="$(find amcl)/examples/test.launch" />
+
+    <!-- 运行move_base节点 -->
+    <include file="$(find mobe_base)/launch/path.launch" />
+
+</launch>
